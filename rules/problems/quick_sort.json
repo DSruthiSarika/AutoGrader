@@ -1,0 +1,71 @@
+{
+    "problem": {
+        "name": "quick_sort",
+        "description": "Sort an array using Quick Sort",
+        "input_type": "array"
+    },
+    "correctness": {
+        "test_file": "tests/quick_sort_tests.json"
+    },
+    "logical_behavior": {
+        "enabled": true,
+        "cases": [
+            {
+                "name": "reverse_order",
+                "input": "5\n5 4 3 2 1\n",
+                "expected_output": "1 2 3 4 5\n"
+            },
+            {
+                "name": "duplicates",
+                "input": "6\n5 2 8 2 1 5\n",
+                "expected_output": "1 2 2 5 5 8\n"
+            },
+            {
+                "name": "negative_numbers",
+                "input": "5\n-3 7 -1 0 4\n",
+                "expected_output": "-3 -1 0 4 7\n"
+            },
+            {
+                "name": "already_sorted",
+                "input": "5\n1 2 3 4 5\n",
+                "expected_output": "1 2 3 4 5\n"
+            },
+            {
+                "name": "single_element",
+                "input": "1\n42\n",
+                "expected_output": "42\n"
+            }
+        ]
+    },
+    "modularity": {
+        "min_helper_functions": 2,
+        "require_helper_calls": true
+    },
+    "complexity": {
+        "required": "O(n log n)",
+        "enabled": true,
+        "repetitions": 5,
+        "benchmark_cases": [
+            {
+                "input_size": 500,
+                "input_type": "reverse_array"
+            },
+            {
+                "input_size": 1000,
+                "input_type": "reverse_array"
+            },
+            {
+                "input_size": 2000,
+                "input_type": "reverse_array"
+            },
+            {
+                "input_size": 4000,
+                "input_type": "reverse_array"
+            },
+            {
+                "input_size": 8000,
+                "input_type": "reverse_array"
+            }
+        ]
+    }
+}

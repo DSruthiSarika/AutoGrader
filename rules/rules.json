@@ -1,0 +1,53 @@
+
+{
+    "problem_configs": {
+        "binary_search": "rules/problems/binary_search.json",
+        "linear_search": "rules/problems/linear_search.json",
+        "bubble_sort": "rules/problems/bubble_sort.json",
+        "selection_sort": "rules/problems/selection_sort.json",
+        "insertion_sort": "rules/problems/insertion_sort.json",
+        "merge_sort": "rules/problems/merge_sort.json",
+        "quick_sort": "rules/problems/quick_sort.json",
+        "correct": "rules/problems/addition.json"
+    },
+    "default_problem_config": "rules/problems/binary_search.json",
+    "grading": {
+        "total_marks": 100,
+        "weights": {
+            "correctness": 20,
+            "syntax": 10,
+            "structure": 10,
+            "modularity": 10,
+            "logical_behavior": 10,
+            "complexity": 10,
+            "memory_safety": 10,
+            "readability": 10,
+            "originality": 10
+        }
+    },
+    "execution": {
+        "timeout_seconds": 2,
+        "memory_limit_mb": 128
+    },
+    "syntax": {
+        "enabled": true,
+        "compiler": "gcc",
+        "standard": "c11",
+        "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror"
+        ]
+    },
+    "originality": {
+        "enabled": true,
+        "comparison_files": [
+            "correct.c",
+            "wrong_format.c",
+            "wrong_output.c",
+            "linear_search.c",
+            "binary_search.c"
+        ],
+        "threshold": 0.85
+    }
+}

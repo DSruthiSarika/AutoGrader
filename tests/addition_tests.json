@@ -1,0 +1,20 @@
+{
+    "tests": [
+        {
+            "input": "5 7\n",
+            "expected_output": "12\n"
+        },
+        {
+            "input": "0 0\n",
+            "expected_output": "0\n"
+        },
+        {
+            "input": "-5 10\n",
+            "expected_output": "5\n"
+        },
+        {
+            "input": "-4 -6\n",
+            "expected_output": "-10\n"
+        }
+    ]
+}

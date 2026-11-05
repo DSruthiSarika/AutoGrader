@@ -1,0 +1,92 @@
+
+{
+    "problem": {
+        "name": "linear_search",
+        "description": "Search for an element in an array",
+        "input_type": "array_and_key"
+    },
+    "correctness": {
+        "test_file": "tests/linear_search_tests.json"
+    },
+    "logical_behavior": {
+        "enabled": true,
+        "cases": [
+            {
+                "name": "first_element",
+                "input": "5\n0\n",
+                "expected_output": "0\n"
+            },
+            {
+                "name": "middle_element",
+                "input": "5\n2\n",
+                "expected_output": "2\n"
+            },
+            {
+                "name": "last_element",
+                "input": "5\n4\n",
+                "expected_output": "4\n"
+            },
+            {
+                "name": "element_not_found",
+                "input": "5\n7\n",
+                "expected_output": "-1\n"
+            },
+            {
+                "name": "single_element_found",
+                "input": "1\n0\n",
+                "expected_output": "0\n"
+            },
+            {
+                "name": "single_element_not_found",
+                "input": "1\n5\n",
+                "expected_output": "-1\n"
+            },
+            {
+                "name": "negative_search_key",
+                "input": "5\n-3\n",
+                "expected_output": "-1\n"
+            },
+            {
+                "name": "large_array_last_element",
+                "input": "100\n99\n",
+                "expected_output": "99\n"
+            },
+            {
+                "name": "zero_search_key",
+                "input": "10\n0\n",
+                "expected_output": "0\n"
+            }
+        ]
+    },
+    "modularity": {
+        "min_helper_functions": 1,
+        "require_helper_calls": true
+    },
+    "complexity": {
+        "required": "O(n)",
+        "enabled": true,
+        "repetitions": 5,
+        "benchmark_cases": [
+            {
+                "input_size": 500000,
+                "input": "500000\n-1\n"
+            },
+            {
+                "input_size": 1000000,
+                "input": "1000000\n-1\n"
+            },
+            {
+                "input_size": 2000000,
+                "input": "2000000\n-1\n"
+            },
+            {
+                "input_size": 4000000,
+                "input": "4000000\n-1\n"
+            },
+            {
+                "input_size": 8000000,
+                "input": "8000000\n-1\n"
+            }
+        ]
+    }
+}

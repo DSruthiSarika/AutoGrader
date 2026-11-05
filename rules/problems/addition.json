@@ -1,0 +1,95 @@
+{
+    "problem": {
+        "name": "addition",
+        "description": "Read two integers and print their sum",
+        "input_type": "two_integers"
+    },
+
+    "correctness": {
+        "test_file": "tests/addition_tests.json"
+    },
+
+    "logical_behavior": {
+        "enabled": true,
+        "cases": [
+            {
+                "name": "both_zero",
+                "input": "0 0\n",
+                "expected_output": "0\n"
+            },
+            {
+                "name": "positive_numbers",
+                "input": "13 29\n",
+                "expected_output": "42\n"
+            },
+            {
+                "name": "negative_numbers",
+                "input": "-13 -29\n",
+                "expected_output": "-42\n"
+            },
+            {
+                "name": "mixed_signs",
+                "input": "-12 7\n",
+                "expected_output": "-5\n"
+            },
+            {
+                "name": "zero_first",
+                "input": "0 41\n",
+                "expected_output": "41\n"
+            },
+            {
+                "name": "zero_second",
+                "input": "-63 0\n",
+                "expected_output": "-63\n"
+            },
+            {
+                "name": "large_positive_no_overflow",
+                "input": "2147483647 0\n",
+                "expected_output": "2147483647\n"
+            },
+            {
+                "name": "large_negative_no_overflow",
+                "input": "-2147483648 0\n",
+                "expected_output": "-2147483648\n"
+            },
+            {
+                "name": "extra_whitespace",
+                "input": "19    23\n",
+                "expected_output": "42\n"
+            }
+        ]
+    },
+
+    "modularity": {
+        "min_helper_functions": 0,
+        "require_helper_calls": false
+    },
+
+    "complexity": {
+        "required": "O(1)",
+        "enabled": true,
+        "repetitions": 5,
+        "benchmark_cases": [
+            {
+                "input_size": 1,
+                "input": "5 7\n"
+            },
+            {
+                "input_size": 2,
+                "input": "10 20\n"
+            },
+            {
+                "input_size": 3,
+                "input": "100 200\n"
+            },
+            {
+                "input_size": 4,
+                "input": "1000 2000\n"
+            },
+            {
+                "input_size": 5,
+                "input": "10000 20000\n"
+            }
+        ]
+    }
+}
