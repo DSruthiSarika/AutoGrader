@@ -209,8 +209,13 @@ Complexity analysis is enabled only where the problem provides a meaningful scal
 ## Author
 
 **Digumurthy Sruthi Sarika**
+
 **Nithya R**
+
 **Khushi Kumari**
+
 **Shruti Verma**
+
 M.Tech Artificial Intelligence  
+
 Indian Institute of Technology Patna
